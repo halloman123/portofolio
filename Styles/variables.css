@@ -1,0 +1,55 @@
+:root {
+    --primary-color: rgba(255, 255, 255, 0.781);
+    --primary-text-color: rgb(0, 0, 0);
+    --secondary-text-color: rgb(197,100,119);
+    --primary-head-color: rgb(255, 255, 255);
+    --primary-border-color: rgb(122, 122, 122);
+    --secondary-border-color-head: rgb(53, 53, 53);
+    --primary-selection-color: rgba(39, 236, 236, 0.418);
+    --secondary-border-color: rgb(3, 64, 114);
+    --primary-section-color: rgb(255, 255, 255);
+    --link-color: rgb(11, 113, 247);
+
+    --font-primary-family: "Playfair Display", serif;
+    --font-primary-optical: auto;
+    --font-primary-weight: 565;
+    --font-primary-style: normal;
+
+    --font-secondary-family: "Rubik", serif;
+    --font-secondary-optical: auto;
+    --font-secondary-weight: bold;
+    --font-secondary-style: normal;
+
+    --coin-color: rgba(0, 0, 0, 0);
+
+    --moon: 0;
+    --sun: 1;
+    --coin:hidden;
+
+    --switch-bg: #ccc;
+    --switch-thumb: #fff;
+    --switch-checked: rgb(25, 31, 208);
+}
+
+[data-theme='dark'] {
+    --primary-color: rgba(0, 0, 0, 0.781);
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(58, 155, 59);
+    --primary-head-color: rgb(204, 181, 181);
+    --primary-border-color: rgb(133, 133, 133);
+    --secondary-border-color-head: rgb(202, 202, 202);
+    --primary-selection-color: rgba(216, 19, 19, 0.418);
+    --secondary-border-color: rgb(252, 191, 141);
+    --primary-section-color: rgb(0, 0, 0);
+    --coin-color:rgb(255,215,0);
+    --link-color: rgb(244, 142, 8);
+
+    --sun: 0;
+    --moon: 1;
+    --coin:visible;
+
+    --switch-bg: #333333;
+    --switch-thumb: #000000;
+    --switch-checked: rgb(230, 224, 47);
+
+}
