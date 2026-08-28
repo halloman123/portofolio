@@ -207,7 +207,6 @@ body {
   margin: 20px;
   background-color: var(--primary-color);
   border-radius: 999px;
-  z-index: 2;
 }
 
 .WaarImage img {
@@ -226,7 +225,6 @@ body {
   background-color: var(--primary-section-color);
   border: 1px solid var(--primary-border-color);
   border-radius: 99px;
-  z-index: 1;
 }
 
 .WaarTitle {
@@ -535,7 +533,7 @@ footer {
   }
 
   .WaarMain {
-    grid-template-columns: minmax(220px, 1fr) minmax(350px, 1.2fr);
+    grid-template-columns: 150px minmax(220px, 1fr) 100px minmax(350px, 1.2fr) 150px;
     padding-left: 40px;
     padding-right: 40px;
   }
