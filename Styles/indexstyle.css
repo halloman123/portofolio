@@ -23,24 +23,27 @@ html {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primary-color);
   padding-bottom: 59.25px;
+  overflow-x: hidden;
 }
 
 .navindex {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--primary-color);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 0px;
+  padding: 10px 20px;
+  border-radius: 0;
   width: 100%;
   border-bottom: 3px solid var(--primary-border-color);
-  float: left;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 .liststyle {
@@ -50,9 +53,9 @@ body {
 .nav-text {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-size: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  font-size: clamp(15px, 1.2vw, 20px);
+  padding-left: clamp(20px, 4vw, 70px);
+  padding-right: clamp(20px, 4vw, 70px);
   transition: 0.7s;
   font-family: var(--font-secondary-family);
   font-optical-sizing: var(--font-secondary-optical);
@@ -87,21 +90,26 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding-top: 77px;
-  padding-bottom: 280px;
-  padding-right: 70px;
+  padding-bottom: clamp(100px, 18vw, 280px);
+  padding-right: clamp(30px, 6vw, 70px);
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .bannerimage {
-  grid-column: 1/ -1;
+  grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: block;
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
   position: absolute;
+  inset: 0;
   z-index: -1;
-  max-width: 100%;
-  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
   user-select: none;
 }
 
@@ -110,25 +118,27 @@ body {
   justify-content: end;
 
   h1 {
-    font-size: 50px;
+    font-size: clamp(32px, 4vw, 50px);
     color: var(--primary-head-color);
     user-select: none;
   }
 }
-.bannerMoon{
 
+.bannerMoon {
   padding-top: 20px;
-  font-size: 40px;
+  font-size: clamp(28px, 3vw, 40px);
   justify-self: end;
-    position: relative;
-    gap: 0px;
-a{
-  color: yellow;
-  cursor: default;
+  position: relative;
+  gap: 0;
+
+  a {
+    color: yellow;
+    cursor: default;
   }
 }
-.bannerMoon svg{
-    position: absolute;
+
+.bannerMoon svg {
+  position: absolute;
   top: 40px;
   right: 0;
   color: yellow;
@@ -141,7 +151,7 @@ a{
 
   h1 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
     justify-content: center;
     user-select: none;
   }
@@ -150,24 +160,26 @@ a{
 .AboutTitle {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: clamp(25px, 4vw, 50px);
   color: var(--secondary-text-color);
 
   h2 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: clamp(28px, 3vw, 40px);
   }
 }
 
 .AboutTekst {
   display: flex;
-  padding: 50px;
-  padding-left: 150px;
+  padding: clamp(30px, 4vw, 50px);
+  padding-left: clamp(30px, 10vw, 150px);
+  padding-right: clamp(30px, 5vw, 100px);
   max-width: 1300px;
+  box-sizing: border-box;
 
   p {
-
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
+    line-height: 1.6;
   }
 }
 
@@ -177,51 +189,12 @@ a{
   padding-bottom: 100px;
   border-top: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
+
   grid-template-areas:
     "extra1 image extra2 title extra3"
     "extra1 image extra2 text extra3";
-  grid-template-columns: 150px 1fr 150px 1fr 150px;
-  grid-template-rows: auto auto auto;
-}
 
-.WaarTitle {
-  grid-area: title;
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  justify-content: end;
-  background-color: var(--primary-section-color);
-  color: var(--secondary-text-color);
-  border-top: 1px solid var(--primary-border-color);
-  border-left: 1px solid var(--primary-border-color);
-  border-right: 1px solid var(--primary-border-color);
-  border-radius: 99px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-
-  h2 {
-    margin-bottom: 20px;
-    font-size: 40px;
-  }
-}
-
-.WaarTekst {
-  grid-area: text;
-  display: flex;
-  justify-content: end;
-  padding: 50px;
-  padding-right: 150px;
-  background-color: var(--primary-section-color);
-  border-bottom: 1px solid var(--primary-border-color);
-  border-right: 1px solid var(--primary-border-color);
-  border-left: 1px solid var(--primary-border-color);
-  border-radius: 99px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-
-  p {
-    font-size: 20px;
-  }
+  grid-template-columns: 150px minmax(250px, 400px) 100px minmax(300px, 1fr) 150px;
 }
 
 .WaarImage {
@@ -229,51 +202,101 @@ a{
   display: flex;
   justify-self: center;
   align-self: center;
-  max-height: 400px;
+  width: min(80%, 400px);
   max-width: 400px;
-  border-radius: 999px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   background-color: var(--primary-color);
-
-  img {
-    padding: 0;
-    height: 370px;
-    width: auto;
-    border-radius: 9999px;
-    box-shadow: 0px 0px 18px var(--primary-text-color);
-  }
+  border-radius: 999px;
+  z-index: 2;
 }
+
+.WaarImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 9999px;
+  box-shadow: 0 0 18px var(--primary-text-color);
+}
+
+.WaarImageBorder {
+  grid-area: image;
+  align-self: stretch;
+  background-color: var(--primary-section-color);
+  border: 1px solid var(--primary-border-color);
+  border-radius: 99px;
+  z-index: 1;
+}
+
+.WaarTitle {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: clamp(30px, 4vw, 50px);
+  background-color: var(--primary-section-color);
+  color: var(--secondary-text-color);
+  border-top: 1px solid var(--primary-border-color);
+  border-left: 1px solid var(--primary-border-color);
+  border-right: 1px solid var(--primary-border-color);
+  border-radius: 99px 99px 0 0;
+}
+
+.WaarTekst {
+  grid-area: text;
+  display: flex;
+  justify-content: flex-end;
+  padding: clamp(30px, 4vw, 50px);
+  padding-right: clamp(30px, 10vw, 150px);
+  background-color: var(--primary-section-color);
+  border-bottom: 1px solid var(--primary-border-color);
+  border-right: 1px solid var(--primary-border-color);
+  border-left: 1px solid var(--primary-border-color);
+  border-radius: 0 0 99px 99px;
+}
+
+.WaarTekst p {
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.6;
+}
+
 
 .requiem {
   bottom: 2px;
   position: fixed;
   left: 2px;
-  a{
-  cursor: default;
+
+  a {
+    cursor: default;
   }
 }
-.goldexperience{
+
+.goldexperience {
   visibility: hidden;
   opacity: 0;
   z-index: 20;
   position: absolute;
   left: 5px;
-  bottom: 5px; 
+  bottom: 5px;
   transition: 1s;
-    cursor: default;
-  img{
-      border-radius: 20px
+  cursor: default;
+
+  img {
+    border-radius: 20px;
   }
 }
-.ending{
-      cursor: default;
+
+.ending {
+  cursor: default;
 }
-.requiem:hover .goldexperience{
+
+.requiem:hover .goldexperience {
   visibility: visible;
   opacity: 1;
 }
-.aura{
+
+.aura {
   height: 100%;
   max-height: 888px;
   width: 100%;
@@ -281,19 +304,12 @@ a{
   position: relative;
 }
 
-.WaarImageBorder {
-  grid-area: image;
-  background-color: var(--primary-section-color);
-  border: 1px solid var(--primary-border-color);
-  border-radius: 99px;
-}
-
 .footericon {
   height: 30px;
   width: 30px;
   padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: clamp(20px, 4vw, 50px);
+  padding-right: clamp(20px, 4vw, 50px);
   color: var(--primary-text-color);
   border-left: 1px solid var(--primary-border-color);
   border-right: 1px solid var(--primary-border-color);
@@ -303,26 +319,27 @@ footer {
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
   align-content: space-between;
   background-color: var(--primary-color);
   width: 100%;
   border-top: 1px solid var(--primary-border-color);
   padding-top: 5px;
+  box-sizing: border-box;
 }
 
 .WatTitle {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: clamp(25px, 4vw, 50px);
   color: var(--secondary-text-color);
 
   h2 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: clamp(28px, 3vw, 40px);
   }
 }
-
 
 .darklight {
   padding-left: 20px;
@@ -355,18 +372,15 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-
-
-.dark2{
+.dark2 {
   cursor: default;
-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  a {
     text-decoration: none;
-  a{
-    text-decoration: none;
-      cursor: default;
+    cursor: default;
   }
-
-
 }
 
 .darklight__slider:before {
@@ -401,7 +415,7 @@ color: var(--primary-text-color);
   color: var(--switch-checked);
 }
 
-.darklight input:checked+.darklight__slider:before {
+.darklight input:checked + .darklight__slider:before {
   transform: translate(40px);
 }
 
@@ -420,43 +434,48 @@ color: var(--primary-text-color);
 .AboutMeTitle {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: clamp(25px, 4vw, 50px);
   color: var(--secondary-text-color);
 
   h1 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: clamp(28px, 3vw, 40px);
   }
-  a{
+
+  a {
     font-size: 10px;
     color: var(--coin-color);
   }
 }
 
-
 .AboutMeTekst {
-  padding: 50px;
-  padding-left: 250px;
+  padding: clamp(30px, 4vw, 50px);
+  padding-left: clamp(30px, 15vw, 250px);
+  padding-right: clamp(30px, 5vw, 100px);
   max-width: 1600px;
+  box-sizing: border-box;
 
   p {
-    font-size: 20px;
+    font-size: clamp(16px, 1.4vw, 20px);
+    line-height: 1.6;
   }
 }
 
 .projectenGroup {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 30px;
   width: 100%;
   padding-top: 124px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: clamp(25px, 5vw, 50px);
+  padding-right: clamp(25px, 5vw, 50px);
+  box-sizing: border-box;
 }
 
 .project {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   padding: 8px;
   border: 1px solid var(--primary-border-color);
   border-radius: 15px;
@@ -465,25 +484,254 @@ color: var(--primary-text-color);
   a {
     text-decoration: none;
   }
-  h3{
-    font-size: 34px;
+
+  h3 {
+    font-size: clamp(24px, 2.5vw, 34px);
   }
-  p{
-    font-size: 18px;
+
+  p {
+    font-size: clamp(16px, 1.3vw, 18px);
+    line-height: 1.5;
   }
 }
-.ProjectTitle{
+
+.ProjectTitle {
   color: var(--link-color);
 }
+
 .project:hover {
   p {
     color: var(--link-color);
   }
 }
-.moon{
+
+.moon {
   opacity: var(--moon);
-    transform: rotate(-45deg) scaleX(-1);
+  transform: rotate(-45deg) scaleX(-1);
 }
-.sun{
+
+.sun {
   opacity: var(--sun);
 }
+
+@media (max-width: 1400px) {
+  .nav-text {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .bannermain {
+    padding-right: 40px;
+  }
+
+  .AboutMeTekst {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .AboutTekst {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .WaarMain {
+    grid-template-columns: minmax(220px, 1fr) minmax(350px, 1.2fr);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-text {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navlogo h1 {
+    font-size: 17px;
+  }
+
+  .bannermain {
+    min-height: 450px;
+    padding-right: 30px;
+  }
+
+  .bannertext h1 {
+    font-size: 38px;
+  }
+
+  .WaarMain {
+    grid-template-columns:
+      30px
+      minmax(200px, 1fr)
+      40px
+      minmax(250px, 1fr)
+      30px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .WaarImage {
+    width: min(80%, 320px);
+  }
+}
+  .projectenGroup {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .darklight {
+    padding-left: 10px;
+  }
+
+  .darklight__toggle-switch {
+    width: 70px;
+    height: 36px;
+  }
+
+  .darklight__slider:before {
+    width: 30px;
+    height: 30px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  .darklight input:checked + .darklight__slider:before {
+    transform: translateX(34px);
+  }
+
+  .darklight__slider .darklight__icon--sun {
+    left: 10px;
+  }
+
+  .darklight__slider .darklight__icon--moon {
+    right: 10px;
+  }
+
+
+@media (max-width: 800px) {
+  .navindex {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-text {
+    white-space: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .bannermain {
+    grid-template-columns: 1fr;
+    min-height: 400px;
+    padding: 80px 25px 60px;
+  }
+
+  .bannertext {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bannerMoon {
+    justify-self: center;
+  }
+
+   .WaarMain {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "image"
+      "title"
+      "text";
+
+    padding: 50px 20px;
+  }
+
+  .WaarImage {
+    width: min(75vw, 280px);
+    max-width: 280px;
+    margin: 20px auto;
+  }
+
+  .WaarImageBorder {
+    min-height: 320px;
+  }
+}
+  .WaarTitle {
+    border-radius: 50px 50px 0 0;
+  }
+
+  .WaarTekst {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .AboutMeTekst,
+  .AboutTekst {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+@media (max-width: 600px) {
+  .navindex {
+    min-height: 55px;
+    padding: 5px 10px;
+  }
+
+  .nav-text {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .navlogo h1 {
+    font-size: 15px;
+  }
+
+  .bannermain {
+    min-height: 350px;
+  }
+
+  .bannertext h1 {
+    font-size: 30px;
+  }
+
+  .AboutMeTitle,
+  .AboutTitle,
+  .WatTitle {
+    padding: 25px;
+  }
+
+  .AboutMeTitle h1,
+  .AboutTitle h2,
+  .WatTitle h2 {
+    font-size: 28px;
+  }
+
+  .AboutMeTekst,
+  .AboutTekst {
+    padding: 20px 25px;
+  }
+
+
+  .WaarImageBorder {
+    min-height: 280px;
+  }
+
+  .WaarImage {
+    width: min(65vw, 250px);
+    max-width: 250px;
+  }
+
+  .WaarTitle,
+  .WaarTekst {
+    padding: 25px;
+  }
+}
+  .footericon {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
