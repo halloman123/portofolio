@@ -284,7 +284,56 @@ body {
     border-radius: 20px;
   }
 }
+.guts {
+  position: relative;
+  display: inline-block;
+}
 
+.behelit {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.guts:hover .behelit {
+  visibility: visible;
+  opacity: 1;
+}
+.eva {
+  position: relative;
+  display: inline-block;
+}
+
+.asuka {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.eva:hover .asuka {
+  visibility: visible;
+  opacity: 1;
+}
 .ending {
   cursor: default;
 }
@@ -293,15 +342,52 @@ body {
   visibility: visible;
   opacity: 1;
 }
-
-.aura {
-  height: 100%;
-  max-height: 888px;
-  width: 100%;
-  padding-top: 80px;
+.ultrakill {
   position: relative;
+  display: inline-block;
 }
+.v1 {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
 
+  img {
+    border-radius: 20px;
+  }
+}
+.ultrakill:hover .v1 {
+  visibility: visible;
+  opacity: 1;
+}
+.darksouls {
+  position: relative;
+  display: inline-block;
+}
+.dark2{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+
+  img {
+    border-radius: 20px;
+  }
+}
+.darksouls:hover .dark2 {
+  visibility: visible;
+  opacity: 1;
+}
 .footericon {
   height: 30px;
   width: 30px;
@@ -368,17 +454,6 @@ footer {
   border-radius: 34px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.dark2 {
-  cursor: default;
-  color: var(--primary-text-color);
-  text-decoration: none;
-
-  a {
-    text-decoration: none;
-    cursor: default;
-  }
 }
 
 .darklight__slider:before {
