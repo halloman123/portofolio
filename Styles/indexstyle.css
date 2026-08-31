@@ -388,6 +388,32 @@ body {
   visibility: visible;
   opacity: 1;
 }
+.nakiri {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+.oni{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+  cursor: pointer;
+  pointer-events: auto;
+
+  img {
+    border-radius: 20px;
+  }
+}
+.nakiri:hover .oni {
+  visibility: visible;
+  opacity: 1;
+}
 .footericon {
   height: 30px;
   width: 30px;
@@ -505,13 +531,16 @@ footer {
 }
 
 .AboutMeTitle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 100%;
   padding: clamp(25px, 4vw, 50px);
   color: var(--secondary-text-color);
 
   h1 {
-    margin-bottom: 20px;
+    margin: 0;
     font-size: clamp(28px, 3vw, 40px);
   }
 
