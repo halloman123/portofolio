@@ -284,6 +284,7 @@ body {
     border-radius: 20px;
   }
 }
+
 .guts {
   position: relative;
   display: inline-block;
@@ -309,6 +310,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .eva {
   position: relative;
   display: inline-block;
@@ -334,6 +336,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .ending {
   cursor: default;
 }
@@ -342,10 +345,12 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .ultrakill {
   position: relative;
   display: inline-block;
 }
+
 .v1 {
   visibility: hidden;
   opacity: 0;
@@ -361,15 +366,18 @@ body {
     border-radius: 20px;
   }
 }
+
 .ultrakill:hover .v1 {
   visibility: visible;
   opacity: 1;
 }
+
 .darksouls {
   position: relative;
   display: inline-block;
 }
-.dark2{
+
+.dark2 {
   visibility: hidden;
   opacity: 0;
   z-index: 20;
@@ -384,17 +392,20 @@ body {
     border-radius: 20px;
   }
 }
+
 .darksouls:hover .dark2 {
   visibility: visible;
   opacity: 1;
 }
+
 .nakiri {
   position: relative;
   display: inline-flex;
   align-items: center;
   width: fit-content;
 }
-.oni{
+
+.oni {
   visibility: hidden;
   opacity: 0;
   z-index: 20;
@@ -410,10 +421,12 @@ body {
     border-radius: 20px;
   }
 }
+
 .nakiri:hover .oni {
   visibility: visible;
   opacity: 1;
 }
+
 .footericon {
   height: 30px;
   width: 30px;
@@ -514,7 +527,7 @@ footer {
   color: var(--switch-checked);
 }
 
-.darklight input:checked + .darklight__slider:before {
+.darklight input:checked+.darklight__slider:before {
   transform: translate(40px);
 }
 
@@ -665,11 +678,7 @@ footer {
 
   .WaarMain {
     grid-template-columns:
-      30px
-      minmax(200px, 1fr)
-      40px
-      minmax(250px, 1fr)
-      30px;
+      30px minmax(200px, 1fr) 40px minmax(250px, 1fr) 30px;
 
     padding-left: 0;
     padding-right: 0;
@@ -679,39 +688,40 @@ footer {
     width: min(80%, 320px);
   }
 }
-  .projectenGroup {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
-  .darklight {
-    padding-left: 10px;
-  }
+.projectenGroup {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
-  .darklight__toggle-switch {
-    width: 70px;
-    height: 36px;
-  }
+.darklight {
+  padding-left: 10px;
+}
 
-  .darklight__slider:before {
-    width: 30px;
-    height: 30px;
-    left: 3px;
-    bottom: 3px;
-  }
+.darklight__toggle-switch {
+  width: 70px;
+  height: 36px;
+}
 
-  .darklight input:checked + .darklight__slider:before {
-    transform: translateX(34px);
-  }
+.darklight__slider:before {
+  width: 30px;
+  height: 30px;
+  left: 3px;
+  bottom: 3px;
+}
 
-  .darklight__slider .darklight__icon--sun {
-    left: 10px;
-  }
+.darklight input:checked+.darklight__slider:before {
+  transform: translateX(34px);
+}
 
-  .darklight__slider .darklight__icon--moon {
-    right: 10px;
-  }
+.darklight__slider .darklight__icon--sun {
+  left: 10px;
+}
+
+.darklight__slider .darklight__icon--moon {
+  right: 10px;
+}
 
 
 @media (max-width: 800px) {
@@ -741,7 +751,7 @@ footer {
     justify-self: center;
   }
 
-   .WaarMain {
+  .WaarMain {
     grid-template-columns: 1fr;
 
     grid-template-areas:
@@ -762,19 +772,20 @@ footer {
     min-height: 320px;
   }
 }
-  .WaarTitle {
-    border-radius: 50px 50px 0 0;
-  }
 
-  .WaarTekst {
-    border-radius: 0 0 50px 50px;
-  }
+.WaarTitle {
+  border-radius: 50px 50px 0 0;
+}
 
-  .AboutMeTekst,
-  .AboutTekst {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.WaarTekst {
+  border-radius: 0 0 50px 50px;
+}
+
+.AboutMeTekst,
+.AboutTekst {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 
 @media (max-width: 600px) {
@@ -832,8 +843,8 @@ footer {
     padding: 25px;
   }
 }
-  .footericon {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
+.footericon {
+  padding-left: 20px;
+  padding-right: 20px;
+}
