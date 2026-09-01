@@ -567,9 +567,9 @@ footer {
   padding: clamp(30px, 4vw, 50px);
   padding-left: clamp(30px, 15vw, 250px);
   padding-right: clamp(30px, 5vw, 100px);
-  max-width: 1600px;
+  max-width: 1200px;
   box-sizing: border-box;
-
+  justify-self: center;
   p {
     font-size: clamp(16px, 1.4vw, 20px);
     line-height: 1.6;
