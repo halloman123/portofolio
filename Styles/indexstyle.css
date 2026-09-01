@@ -642,6 +642,7 @@ footer {
   .AboutMeTekst {
     padding-left: 100px;
     padding-right: 100px;
+    max-width: 1200px;
   }
 
   .AboutTekst {
