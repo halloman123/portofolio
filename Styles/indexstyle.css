@@ -225,6 +225,7 @@ body {
   background-color: var(--primary-section-color);
   border: 1px solid var(--primary-border-color);
   border-radius: 99px;
+  align-content: center;
 }
 
 .WaarTitle {
@@ -453,13 +454,11 @@ footer {
 }
 
 .WatTitle {
-  display: flex;
-  align-items: center;
   padding: clamp(25px, 4vw, 50px);
   color: var(--secondary-text-color);
 
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: clamp(28px, 3vw, 40px);
   }
 }
@@ -628,7 +627,38 @@ footer {
 .sun {
   opacity: var(--sun);
 }
-
+.WatTekst{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  a{
+    text-decoration: none;
+  }
+}
+.WatProject{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  margin: 10px 40px;
+  h3{
+    font-size: clamp(24px, 2.5vw, 34px);
+  }
+  p{
+    font-size: clamp(16px, 1.3vw, 18px);
+    line-height: 1.5;
+  }
+    a{
+    text-decoration: none;
+  }
+}
+.WatProject:hover {
+  p {
+    color: var(--link-color);
+  }
+}
 @media (max-width: 1400px) {
   .nav-text {
     padding-left: 35px;
