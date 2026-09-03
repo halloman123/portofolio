@@ -459,7 +459,6 @@ footer {
 
   h2 {
     margin-bottom: 0;
-    font-size: clamp(28px, 3vw, 40px);
   }
 }
 
@@ -657,6 +656,21 @@ footer {
 .WatProject:hover {
   p {
     color: var(--link-color);
+  }
+}
+.WaaromSDMain{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 8px;
+  background-color: var(--primary-color);
+  margin: 10px 40px;
+}
+.WaaromSDTitle{
+  color: var(--secondary-text-color);
+  justify-self: end;
+  h2{
+    font-size: clamp(24px, 2.5vw, 34px);
   }
 }
 @media (max-width: 1400px) {
