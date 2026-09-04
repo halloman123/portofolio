@@ -20,11 +20,8 @@
     --font-secondary-weight: bold;
     --font-secondary-style: normal;
 
-    --coin-color: rgba(0, 0, 0, 0);
-
     --moon: 0;
     --sun: 1;
-    --coin: hidden;
 
     --switch-bg: #ccc;
     --switch-thumb: #fff;
@@ -41,12 +38,10 @@
     --primary-selection-color: rgba(216, 19, 19, 0.418);
     --secondary-border-color: rgb(252, 191, 141);
     --primary-section-color: rgb(0, 0, 0);
-    --coin-color: rgb(255, 215, 0);
     --link-color: rgb(244, 142, 8);
 
     --sun: 0;
     --moon: 1;
-    --coin: visible;
 
     --switch-bg: #333333;
     --switch-thumb: #000000;

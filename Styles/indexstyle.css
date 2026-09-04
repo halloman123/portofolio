@@ -427,7 +427,28 @@ body {
   visibility: visible;
   opacity: 1;
 }
-
+.RoN{
+  position: relative;
+  display: inline-block;
+}
+.NOT{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+  img{
+    border-radius: 20px;
+  }
+}
+.RoN:hover .NOT{
+visibility: visible;
+opacity: 1;
+}
 .footericon {
   height: 30px;
   width: 30px;
@@ -554,11 +575,6 @@ footer {
     margin: 0;
     font-size: clamp(28px, 3vw, 40px);
   }
-
-  a {
-    font-size: 10px;
-    color: var(--coin-color);
-  }
 }
 
 .AboutMeTekst {
@@ -568,6 +584,7 @@ footer {
   max-width: 1200px;
   box-sizing: border-box;
   justify-self: center;
+
   p {
     font-size: clamp(16px, 1.4vw, 20px);
     line-height: 1.6;
@@ -626,14 +643,17 @@ footer {
 .sun {
   opacity: var(--sun);
 }
-.WatTekst{
+
+.WatTekst {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  a{
+
+  a {
     text-decoration: none;
   }
 }
-.WatProject{
+
+.WatProject {
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -642,35 +662,51 @@ footer {
   border-radius: 15px;
   background-color: var(--primary-color);
   margin: 10px 40px;
-  h3{
+
+  h3 {
     font-size: clamp(24px, 2.5vw, 34px);
   }
-  p{
+
+  p {
     font-size: clamp(16px, 1.3vw, 18px);
     line-height: 1.5;
   }
-    a{
+
+  a {
     text-decoration: none;
   }
 }
+
 .WatProject:hover {
   p {
     color: var(--link-color);
   }
 }
-.WaaromSDMain{
+
+.WaaromSDMain {
   display: flex;
   flex-direction: column;
   min-width: 0;
   padding: 8px;
-  background-color: var(--primary-color);
   margin: 10px 40px;
 }
-.WaaromSDTitle{
+
+.WaaromSDTitle {
+  display: flex;
   color: var(--secondary-text-color);
-  justify-self: end;
-  h2{
+  justify-content: end;
+
+  h2 {
     font-size: clamp(24px, 2.5vw, 34px);
+  }
+}
+.WaaromSDTekst {
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  padding: 8px;
+  p{
+    font-size: clamp(16px, 1.3vw, 18px);
+    line-height: 1.5;
   }
 }
 @media (max-width: 1400px) {
