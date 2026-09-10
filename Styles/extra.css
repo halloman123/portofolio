@@ -1,0 +1,196 @@
+.requiem {
+  bottom: 2px;
+  position: fixed;
+  left: 2px;
+  visibility: hidden;
+  a {
+    cursor: default;
+  }
+}
+
+.goldexperience {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  transition: 1s;
+  cursor: default;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.guts {
+  position: relative;
+  display: inline-block;
+}
+
+.behelit {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.guts:hover .behelit {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+
+.eva {
+  position: relative;
+  display: inline-block;
+}
+
+.asuka {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.eva:hover .asuka {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+
+.ending {
+  cursor: default;
+}
+
+.requiem:hover .goldexperience {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+
+.ultrakill {
+  position: relative;
+  display: inline-block;
+}
+
+.v1 {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.ultrakill:hover .v1 {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+
+.darksouls {
+  position: relative;
+  display: inline-block;
+}
+
+.dark2 {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.darksouls:hover .dark2 {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+
+.nakiri {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.oni {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+  cursor: pointer;
+  pointer-events: auto;
+  visibility: hidden;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.nakiri:hover .oni {
+  visibility: visible;
+  opacity: 1;
+    visibility: hidden;
+}
+.RoN{
+  position: relative;
+  display: inline-block;
+}
+.NOT{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  transition: 1s;
+  cursor: default;
+  pointer-events: none;
+    visibility: hidden;
+  img{
+    border-radius: 20px;
+  }
+}
+.RoN:hover .NOT{
+visibility: visible;
+opacity: 1;
+  visibility: hidden;
+}
