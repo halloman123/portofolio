@@ -240,6 +240,9 @@ body {
   border-left: 1px solid var(--primary-border-color);
   border-right: 1px solid var(--primary-border-color);
   border-radius: 99px 99px 0 0;
+  h2{
+    font-size: 40px;
+  }
 }
 
 .WaarTekst {
@@ -290,6 +293,7 @@ footer {
 
   h2 {
     margin-bottom: 0;
+    font-size: 40px;
   }
 }
 
@@ -508,18 +512,29 @@ footer {
   justify-content: end;
 
   h2 {
-    font-size: clamp(24px, 2.5vw, 34px);
+    font-size: clamp(24px, 2.5vw, 40px);
   }
 }
 .WaaromSDTekst {
   border: 1px solid var(--primary-border-color);
   border-radius: 15px;
   padding: 8px;
+      background-color: var(--primary-color);
   p{
     font-size: clamp(16px, 1.3vw, 18px);
     line-height: 1.5;
   }
 }
+.extrapro{
+  position: absolute;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 15px;
+  padding: 2px;
+  width: 96px;
+  right:10px;
+      background-color: var(--primary-color);
+}
+
 @media (max-width: 1400px) {
   .nav-text {
     padding-left: 35px;
